@@ -90,7 +90,7 @@ class RenderStickyHeader extends RenderBox
   double get devicePixelRatio => ui.window.devicePixelRatio;
 
   double roundToNearestPixel(double offset) {
-    return (offset * devicePixelRatio).roundToDouble() / devicePixelRatio;
+    return (offset * devicePixelRatio).ceilToDouble() / devicePixelRatio;
   }
 
   @override
